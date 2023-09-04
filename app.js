@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
 
-// Add any necessary middleware and configuration here
+
+const apiRoutes = require('./src/Routes/api');
+app.use('/api', apiRoutes);
+
+
 
 module.exports = app;
+
